@@ -10,5 +10,17 @@ class Record{
         this.building = building;
     }
 
+    // positions are experience levels for this simple record system.  Multiply by 1000 for bimonthly salary
+    salaries(position){
+        return position * 1000;
+    }
+
+    // getter 
+    get salary(){
+        return `$${this.salaries}`;
+    }
+    
 }
 
+// sample: let JL = new Record("John Louis", 1, "A");
+// console.log(JL.salary); // 1000
