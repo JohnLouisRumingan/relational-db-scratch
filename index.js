@@ -15,6 +15,8 @@ class Record{
         // Record.allInstances.push(this);
     }
 
+    // note for class variables and ES7+. In ES6, there is native support for class creation but no option for class variables
+    // https://stackoverflow.com/questions/22528967/es6-class-variable-alternatives
 
     // static allRecords(){
     //     return Record.allInstances;
