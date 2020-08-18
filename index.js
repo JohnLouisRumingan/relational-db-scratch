@@ -11,13 +11,14 @@ class Record{
     }
 
     // positions are experience levels for this simple record system.  Multiply by 1000 for bimonthly salary
-    salaries(position){
+    calcSalary(position){
         return position * 1000;
     }
 
-    // getter 
+    // getter. get syntax binds an object property to a function that will be called when that property is looked up
+
     get salary(){
-        return `$${this.salaries}`;
+        return `$${this.calcSalary}`;
     }
     
 }
