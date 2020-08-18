@@ -18,7 +18,7 @@ class Record{
     // getter. get syntax binds an object property to a function that will be called when that property is looked up
 
     get salary(){
-        return `$${this.calcSalary}`;
+        return `$${this.calcSalary()}`;
     }
     
 }
