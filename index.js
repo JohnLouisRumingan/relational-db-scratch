@@ -11,14 +11,14 @@ class Record{
         this.position = position;
         this.building = building;
 
-        Record.allInstances = [];
-        Record.allInstances.push(this);
+        // Record.allInstances = [];
+        // Record.allInstances.push(this);
     }
 
 
-    static allRecords(){
-        return Record.allInstances;
-    }
+    // static allRecords(){
+    //     return Record.allInstances;
+    // }
 
     // positions are experience levels for this simple record system.  Multiply by 1000 for bimonthly salary
     calcSalary(){
